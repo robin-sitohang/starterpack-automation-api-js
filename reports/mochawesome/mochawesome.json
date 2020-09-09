@@ -1,0 +1,121 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-09-09T20:01:57.803Z",
+    "end": "2020-09-09T20:02:00.588Z",
+    "duration": 2785,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dc786f74-7256-403a-a8d5-8d4d1f4a4fa3",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a784c924-1db7-4885-83bf-7b2db7301f33",
+          "title": "Show Lyrics",
+          "fullFile": "C:\\Users\\rchez\\Desktop\\at-api\\api\\test\\show-lyrics-test.js",
+          "file": "\\api\\test\\show-lyrics-test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@get Sebagai user, saya ingin mendapatkan lirik ketika saya menginput nama artis dan lagunya",
+              "fullTitle": "Show Lyrics @get Sebagai user, saya ingin mendapatkan lirik ketika saya menginput nama artis dan lagunya",
+              "timedOut": false,
+              "duration": 1386,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await page.getLyrics(artist, song);\nassert(response.status).to.equal(200);",
+              "err": {},
+              "uuid": "7ba6c8cd-96fb-438e-8808-165025029c71",
+              "parentUUID": "a784c924-1db7-4885-83bf-7b2db7301f33",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "@get Sebagai user, saya tidak akan mendapatkan lirik ketika menginput nama teman saya dan lagu yang dia cover",
+              "fullTitle": "Show Lyrics @get Sebagai user, saya tidak akan mendapatkan lirik ketika menginput nama teman saya dan lagu yang dia cover",
+              "timedOut": false,
+              "duration": 1389,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const response = await page.getLyrics(temanSaya, song);\nassert(response.status).to.equal(404);\nassert(response.body.error).to.equal('No lyrics found');",
+              "err": {},
+              "uuid": "8c5913fc-7ccd-4ab3-a3d6-0ecbe2f503d5",
+              "parentUUID": "a784c924-1db7-4885-83bf-7b2db7301f33",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7ba6c8cd-96fb-438e-8808-165025029c71",
+            "8c5913fc-7ccd-4ab3-a3d6-0ecbe2f503d5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2775,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 180000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 180000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.1.3"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome/"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
