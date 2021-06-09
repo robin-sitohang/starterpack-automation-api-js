@@ -8,7 +8,7 @@
     "reports": "cd reports && mochawesome.html"
   },
   "keywords": [],
-  "author": "",
+  "author": "sitohang robin",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
