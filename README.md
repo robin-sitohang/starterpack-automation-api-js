@@ -3,12 +3,10 @@
 ## How To Running Automation
 
 ```
-git clone https://github.com/richirin/starterpack-automation-api-js
+git clone https://github.com/robin-sitohang/starterpack-automation-api-js.git
 ```
 
 Open Dir Folder Clone
-
-Edit .env.examples to .env
 
 type at terminal
 
